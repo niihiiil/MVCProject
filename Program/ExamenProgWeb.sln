@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamenProgWeb", "ExamenProgWeb.csproj", "{6F24F9EC-F54D-4C0C-BD12-9ED854C8CADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "..\Database\Database.csproj", "{50B5505A-02EA-4703-8414-31F82721EF85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F24F9EC-F54D-4C0C-BD12-9ED854C8CADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F24F9EC-F54D-4C0C-BD12-9ED854C8CADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F24F9EC-F54D-4C0C-BD12-9ED854C8CADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F24F9EC-F54D-4C0C-BD12-9ED854C8CADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50B5505A-02EA-4703-8414-31F82721EF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B5505A-02EA-4703-8414-31F82721EF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B5505A-02EA-4703-8414-31F82721EF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B5505A-02EA-4703-8414-31F82721EF85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7A8C766-3041-4733-BAED-933B610F474C}
+	EndGlobalSection
+EndGlobal
