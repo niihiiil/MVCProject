@@ -1,0 +1,40 @@
+﻿@model List<Database.Seller>
+@{
+    ViewBag.Title = "GetSellers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Vendedores</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Identificador
+        </th>
+        <th>
+            Nombre
+        </th>
+        <th>
+            Ciudad
+        </th>
+        <th>
+            Celular
+        </th>
+        <th>
+           Estado
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.IDSeller)</td>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.City)</td>
+            <td>@Html.DisplayFor(modelItem => item.Cellphone)</td>
+            <td>@Html.DisplayFor(modelItem => item.State)</td>
+        </tr>
+    }
+</table>
+
+@Html.Partial("PartialView")

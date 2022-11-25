@@ -1,0 +1,45 @@
+﻿@model List<Database.Supplier>
+@{
+    ViewBag.Title = "GetSuppliers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Lista de proveedores</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Identificador
+        </th>
+        <th>
+            Nombre
+        </th>
+        <th>
+            Compañia
+        </th>
+        <th>
+            Dirección
+        </th>
+        <th>
+            Teléfono
+        </th>
+        <th>
+            Producto
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.IDSupplier)</td>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Company)</td>
+            <td>@Html.DisplayFor(modelItem => item.Address)</td>
+            <td>@Html.DisplayFor(modelItem => item.Phone)</td>
+           
+        </tr>
+    }
+</table>
+
+
+@Html.Partial("_PartialView")

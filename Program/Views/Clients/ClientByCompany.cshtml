@@ -1,0 +1,44 @@
+﻿@model List<Database.Client>
+@{
+    ViewBag.Title = "ClientByCompany";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ClientByCompany</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Identificador
+        </th>
+        <th>
+            Nombre
+        </th>
+        <th>
+            Empresa
+        </th>
+        <th>
+            Producto Comprado
+        </th>
+        <th>
+            Cantidad
+        </th>
+        <th>
+            Precio total
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.IDClient)</td>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Company)</td>
+            <td>@Html.DisplayFor(modelItem => item.Purchased_Product)</td>
+            <td>@Html.DisplayFor(modelItem => item.Quantity)</td>
+            <td>@Html.DisplayFor(modelItem => item.TotalPrice)</td>
+        </tr>
+    }
+</table>
+
+@Html.Partial("PartialView")

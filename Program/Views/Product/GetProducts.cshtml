@@ -1,0 +1,45 @@
+﻿@model List<Database.Product>
+@{
+    ViewBag.Title = "GetProducts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GetProducts</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Identificador
+        </th>
+        <th>
+            Producto
+        </th>
+        <th>
+            ID Proveedor
+        </th>
+        <th>
+            Stock
+        </th>
+        <th>
+            Precio Unitario
+        </th>
+        <th>
+            Estado
+        </th>
+        
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.IDProduct)</td>
+            <td>@Html.DisplayFor(modelItem => item.NameProduct)</td>
+            <td>@Html.DisplayFor(modelItem => item.SupplierID)</td>
+            <td>@Html.DisplayFor(modelItem => item.Stock)</td>
+            <td>@Html.DisplayFor(modelItem => item.UnitPrice)</td>
+            <td>@Html.DisplayFor(modelItem => item.State)</td>
+          
+        </tr>
+    }
+</table>
+
